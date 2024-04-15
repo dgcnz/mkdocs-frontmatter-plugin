@@ -45,9 +45,7 @@ class FrontMatterPlugin(BasePlugin[FrontMatterConfig]):
         table += "| --- | --- |\n"
         for key, value in front_matter_dict.items():
             # escape pipes in values unless it's a markdown link
-            match = re.search(ROAMLINK_RE, str(value))
-            if match:
-                value = re.sub(ROAMLINK_RE, RoamLinkReplacer(base_docs_url, page_url), str(value))
+            value = re.sub(ROAMLINK_RE, RoamLinkReplacer(base_docs_url, page_url), str(value))
             value = str(value).replace("|", "\\|")
             table += f"| {key} | {value} |\n"
         table += "\n"
