@@ -7,6 +7,20 @@ Example:
 
 ![Demo](docs/demo.png)
 
+## Setup
+
+Install the plugin using pip:
+
+```sh
+pip install mkdocs-frontmatter-plugin
+```
+
+Activate the plugin in `mkdocs.yml`:
+
+```
+plugins:
+  - mkdocs_frontmatter_plugin
+```
 
 TODO:
 - [ ] Remove `None` values
