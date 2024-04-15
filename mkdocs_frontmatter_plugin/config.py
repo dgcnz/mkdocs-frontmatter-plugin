@@ -31,3 +31,4 @@ class FrontMatterConfig(Config):
     enabled = Type(bool, default = True)
 
     attributes = Optional(ListOfItems(Type(str)))
+    exclude = Optional(ListOfItems(Type(str)))
