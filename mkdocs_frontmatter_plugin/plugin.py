@@ -48,8 +48,7 @@ class FrontMatterPlugin(BasePlugin[FrontMatterConfig]):
             match = re.search(ROAMLINK_RE, str(value))
             if match:
                 value = re.sub(ROAMLINK_RE, RoamLinkReplacer(base_docs_url, page_url), str(value))
-            else:
-                value = str(value).replace("|", "\\|")
+            value = str(value).replace("|", "\\|")
             table += f"| {key} | {value} |\n"
         table += "\n"
         return table
