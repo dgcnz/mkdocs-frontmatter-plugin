@@ -32,8 +32,11 @@ class FrontMatterPlugin(BasePlugin[FrontMatterConfig]):
         return updated_markdown
 
     def construct_table(self, front_matter_dict):
-        table = "| Key | Value |\n"
+        table = "| **Properties** |  |\n"
         table += "| --- | --- |\n"
         for key, value in front_matter_dict.items():
+            # escape pipes in values
+            value = str(value).replace("|", "\\|")
             table += f"| {key} | {value} |\n"
+        table += "\n"
         return table
