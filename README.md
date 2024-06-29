@@ -23,9 +23,10 @@ plugins:
 ```
 
 TODO:
-- [ ] Remove `None` values
-- [ ] Fix the exclude config
-- [ ] Remove quotes around roamlinks
-- [ ] Add support for hyperlinks
+- [x] Remove `None` values
+- [x] Fix the exclude config
+- [x] Remove quotes around roamlinks
+- [x] Add support for hyperlinks
+- [x] Don't display frontmatter if it is empty
 
 
