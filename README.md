@@ -1,6 +1,6 @@
 # Obsidian Dataview Properties to Table Frontmatter plugin
 
-This plugin (wip) creates a markdown table with your dataview frontmatter properties.
+This plugin creates a markdown table with your dataview frontmatter properties.
 
 
 Example:
